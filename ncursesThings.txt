@@ -1,0 +1,48 @@
+initscr();			//Start curses mode 		  
+
+curs_set(0);	//makes curser invis
+
+cbreak();	// ctrl c exits window no terminal
+
+!has_colors() 	//checks if the terminal has colours
+
+printw("text");	//prints stuff
+
+WINDOW* name=newwin(height,width,y,x);	//new window declaration
+
+box(window,char value left/right,char value top/bottom);	//draws a border around the window with the specified chars
+
+//wborder(window,left,right,top,bottom,topleftcorner,toprightcorner,blc,brc);
+a more customisable version of box
+
+mvwprintw(window,y,x,"text")	//prints something at the specified co-ords of the window
+
+wrefresh(window); //refreshes the window
+
+delwin(window); //deletes the window
+
+refresh(); //refreshes the screen
+
+getch(); //waits for a button input
+
+endwin(); //ends curse mode
+
+start_color();
+
+init_pair(pairNum,textcolor,highlightcolor); eg  init_pair(1,COLOR_RED,COLOR_BLUE);
+
+attron(COLOR_PAIR(1));//turns on attribute
+
+attroff(COLOR_PAIR(1));//turns off attribute
+
+getyx(window,y,x);//sets the variable to the cursor of the specified window
+
+getbegyx(window,y,x);//sets the variable to the topleft of the specified window
+
+getmaxyx(window,y,x);//sets the variables to the bottom right of the window
+
+stdscr//the default screen
+
+noecho(); //stops inputs from being drawn
+
+wclear(window); //removes everything in the window

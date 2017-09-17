@@ -1,0 +1,40 @@
+"escape the room" text based puzzle game
+
+variables:
+	player 
+		deaths(specific deaths used already)
+		hearts(deaths left to win)
+
+	Room 
+		contents(every interactable in the room)
+		Inventory(items)
+		items(everything in room)
+		location(what item player is at)
+methods:
+	Room 
+		change room 
+		Inspect item (looks at specified item)
+		Use item (use item from inventory) 
+		grab item(picks up pick ups)
+	Inventory
+		Use item(uses specific item)
+		View item (gives details about specific item)
+		combine(merges 2 listed items into one)
+		
+
+testing:
+
+Code:
+
+
+
+
+goals 
+
+	screen view 
+	rooms 
+	items 
+		inventory 
+
+
+	interaction 
