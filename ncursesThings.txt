@@ -1,3 +1,4 @@
+-lncurses // at the end of compiling
 initscr();			//Start curses mode 		  
 
 curs_set(0);	//makes curser invis
